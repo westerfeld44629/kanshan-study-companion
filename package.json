@@ -1,0 +1,40 @@
+{
+  "name": "kanshan-study-companion",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "看山伴学 — 基于知乎开放平台的个性化知识探索伙伴",
+  "bin": {
+    "kanshan": "bin/kanshan.mjs"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "files": [
+    "bin/kanshan.mjs",
+    "dist/",
+    "server/http-api.mjs",
+    "server/local.mjs",
+    "api/_lib/*.mjs",
+    "shared/*.mjs"
+  ],
+  "scripts": {
+    "start": "node bin/kanshan.mjs start",
+    "dev:full": "node start.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "prepare": "npm run build -- --mode package",
+    "preview": "vite preview",
+    "dev:api": "node --env-file=.env.local server/dev.mjs"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "pdfjs-dist": "^6.5.438",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7"
+  }
+}
