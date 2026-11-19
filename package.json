@@ -4,6 +4,10 @@
   "version": "0.1.0",
   "type": "module",
   "description": "看山伴学 — 基于知乎开放平台的个性化知识探索伙伴",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/westerfeld44629/kanshan-study-companion.git"
+  },
   "bin": {
     "kanshan": "bin/kanshan.mjs"
   },
@@ -12,6 +16,7 @@
   },
   "files": [
     "bin/kanshan.mjs",
+    "docs/images/*.png",
     "dist/",
     "server/http-api.mjs",
     "server/local.mjs",
