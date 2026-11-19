@@ -28,10 +28,11 @@ npm ci --include=dev
 npm start
 ```
 
-`npm ci` 会自动构建网页。也可以直接从 Git 仓库安装命令。
+`npm ci` 会自动构建网页。如果希望克隆后安装全局的 `kanshan` 命令，在源码目录生成安装包再安装。
 
 ```powershell
-npm install -g git+https://github.com/OWNER/kanshan-study-companion.git
+npm pack
+npm install -g .\kanshan-study-companion-0.1.0.tgz
 kanshan start
 ```
 
